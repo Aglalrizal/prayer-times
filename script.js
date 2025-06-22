@@ -37,7 +37,7 @@ function renderLocation(lokasi) {
 
 async function prayerTimes(latitude = -6.2, longitude = 106.816666) {
   const res = await fetch(
-    `http://api.aladhan.com/v1/calendar?latitude=${latitude}&longitude=${longitude}&method=20`
+    `https://api.aladhan.com/v1/calendar?latitude=${latitude}&longitude=${longitude}&method=20`
   );
   const data = await res.json();
   const prayerTimes = data.data[today.getDate() - 1].timings;
