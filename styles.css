@@ -1,0 +1,18 @@
+body {
+  background-color: #f9f9f9;
+}
+.container {
+  max-width: 600px;
+  margin-top: 60px;
+}
+
+thead tr th {
+  background-color: rgba(0, 196, 0, 0.76) !important;
+  font-weight: bold;
+}
+
+tbody tr:hover td {
+  background-color: rgb(205, 243, 205) !important;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
